@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active-Todo</title>
+    <link rel="stylesheet" href="todo.css">
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="main-body-container">
+        <section class="body">
+                <section class="header">
+                    <div class="header-items">Todo</div>
+                    <div class="header-items"><img src="images/icon-moon.svg" alt="Light-Mode" id="moon"></div>
+                </section>
+
+                <section class=" input-section ">
+                    
+                    <input type="text" name="" id="inputField" placeholder="Create a todo....">
+                    <button id="btn"></button>
+               
+                </section>
+                <section class="items-container">
+
+               
+               
+         
+       
+        </section>
+
+        
+   
+    
+            <footer>
+                <div id="footersection">
+                    <div class="footer-items">
+                        <h6 id="itemsNo" class="footerItem">0 items left</h6>
+                        <div class="middle-items" >
+                            <h6 class="items-space footerItem" id="Allno" >All</h6>
+                            <h6 class="items-space footerItem" id="activeno">Active</h6>
+                            <h6 class="items-space footerItem" id="completedNo">Completed</h6>
+                        </div>
+                        <h6 id="clearedCompleted" class="footerItem">cleared completed</h6>
+                    </div>
+                </div>
+            </footer>
+</section>
+        
+            
+</main>
+
+<div class="draggables" id="dra">
+
+</div>
+
+<button  id="radiobtn" >Click To Drag Task</button>
+
+
+    <script src="activeTodo.js"></script>
+</body>
+</html>
