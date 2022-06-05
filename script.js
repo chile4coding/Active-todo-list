@@ -67,6 +67,9 @@ const createHTMLElements = function () {
     itemsAddedContainer.insertAdjacentHTML("afterbegin", htmlAdded);
 
     inputfieldColor.value = "";
+
+    
+   
   }
   itemsbackground();
   displayCross();
@@ -165,8 +168,6 @@ activeBtn.addEventListener("click", function () {
   clearCompletedTask.style.color = "";
   completedBtn.style.color = "";
   activeBtn.style.color = "blue";
-
-  const added = itemsAddedContainer.querySelectorAll(".added");
 });
 
 const arr = function (paragraphLineThrough) {
@@ -266,3 +267,5 @@ radiobtn.addEventListener("click", function () {
     });
   }
 });
+
+

@@ -7,10 +7,12 @@ body{
     font-family: Josefin Sans;
      Font-size: 18px;
      color:  hsl(237, 14%, 26%);
+     background-size: cover;
     
 }
 .main-body-container {
   background-image: url(images/bg-desktop-light.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -168,16 +170,74 @@ footer{
 
 .draggables{
   border: 1px solid;
-  width: 50rem;
-  height: 30rem;
-  margin: 8rem 5rem;
+  width: 40rem;
+  height: 20rem;
+  /* margin: 6rem 10rem; */
+  margin: 6rem auto;
 }
 #radiobtn{
 position: relative;
-bottom: 10rem;
-left:24rem;
+bottom: 8rem;
+left:36rem;
+
 height:3rem;
 width: 13rem;
 font-size: 1.5rem;
+
+}
+
+@media only screen and (max-width: 600px) { 
+
+
+  .main-body-container{
+    max-width: 375px;
+    background-image: url(images/bg-desktop-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+  }
+  .body {
+    width: 20rem;
+    margin: 0 auto;
+    margin-left: 1rem;
+  }
+  .input-section{
+    width: 20rem;
+  }
+  input{
+    width: 15rem;
+   
+    
+  }
+  #inputField{
+    position: absolute;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 3rem;
+
+  }
+  ::placeholder {
+    color: red;
+    padding-left: 0rem;
+  }
+  .footerItem{
+    margin:  0 0.7rem;
+  }
+  #dra{
+    width: 15rem;
+    margin: 3rem auto;
+    height: 14rem;
+  }
+  #radiobtn{
+    position: relative;
+    left: 7.5rem;
+    bottom: 4.5rem;
+    width: 8rem;
+    font-size: 1rem;
+  
+  }
 
 }
